@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Bashorati</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bashorat Dasturi</h1>
+        <form action="/predict" method="post">
+            <label for="age">Yosh:</label>
+            <input type="number" name="age" id="age" step="0.1" required><br>
+
+            <label for="sex">Jins (0 - Ayol, 1 - Erkak):</label>
+            <input type="number" name="sex" id="sex" required><br>
+
+            <label for="bp">Qon bosimi:</label>
+            <input type="number" name="bp" id="bp" step="0.1" required><br>
+
+            <label for="cholesterol">Xolesterin (0 - Past, 1 - Yuqori):</label>
+            <input type="number" name="cholesterol" id="cholesterol" required><br>
+
+            <label for="na_to_k">Natriy-Kaliy nisbati:</label>
+            <input type="number" name="na_to_k" id="na_to_k" step="0.1" required><br>
+
+            <button type="submit">Bashorat Qilish</button>
+        </form>
+    </div>
+</body>
+</html>
